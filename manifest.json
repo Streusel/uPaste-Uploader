@@ -1,0 +1,30 @@
+{
+	"name": "uPaste Uploader",
+	"short_name": "Upload",
+	"version": "1.0",
+	"manifest_version": 2,
+	"description": "A text uploader for uPaste. Select the text, right click and upload it straight to uPaste.",
+	"icons": {
+		"16": "app_icon_16.png",
+		"48": "app_icon_48.png",
+		"128": "app_icon_128.png"
+	},
+	"author": "Streusel",
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"browser_action": {
+		"default_title": "uPaste Uploader",
+		"default_icon": "app_icon_16.png"
+	},
+	"homepage_url": "http://upaste.me",
+	"options_page": "options.html",
+	"permissions": [
+		"tabs",
+		"background",
+		"clipboardWrite",
+		"contextMenus",
+		"http://*/",
+		"https://*/"
+	]
+}
